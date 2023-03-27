@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="account">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="Loginform">
+                            <input type="text" placeholder="username">
+                            <input type="password" name="password" id="pass" placeholder="Password">
+                            <button type="submit" class="btn">Log in</button>
+                            <a href="">Forget Password</a>
+
+                        </form>
+                        <form id="Regform">
+                            <input type="text" placeholder="username">
+                            <input type="email" placeholder="aag@knncj">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem non quos vel eius libero
+                        quas praesentium rem facilis modi omnis accusantium, esse pariatur dolore blanditiis quod. Ex
+                        doloremque temporibus totam.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem non quos vel eius libero
+                        quas praesentium rem facilis modi omnis accusantium, esse pariatur dolore blanditiis quod. Ex
+                        doloremque temporibus totam.</p>
+
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Linked In</li>
+                        <li>Facebook</li>
+                        <li>twitter</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">CopyRight 2023 -Rahul kumar Yadav</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems = Document.getElementById("MenuItems");
+
+        MenuItems.style.MaxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.MaxHeight == "0px") {
+                MenuItems.style.MaxHeight = "200px"
+            }
+            else {
+                MenuItems.style.MaxHeight = "0px"
+            }
+        }
+    </script>
+    <script>
+        var Loginform = document.getElementById("Loginform");
+        var Regform = document.getElementById("Regform");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            Regform.style.transform = "translateX(0px)";
+            Loginform.style.transform = "translateX(0px)";
+
+        }
+        function login() {
+            Regform.style.transform = "translateX(300px)";
+            Loginform.style.transform = "translateX(300px)";
+
+        }
+    </script>
+</body>
+
+</html>
